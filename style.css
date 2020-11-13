@@ -1,0 +1,46 @@
+video {
+  position: absolute;
+  height: 698px;
+  z-index: 10;
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 5px solid red;
+  display: grid;
+  grid-template-columns: 643px 1fr;
+  grid-template-rows: 96px 1fr 64px;
+}
+
+.top {
+  background: purple;
+  grid-column-end: span 2;
+}
+
+.left {
+  background: green;
+}
+
+.right {
+  background: orange;
+}
+
+.bottom {
+  background: blue;
+  grid-column-end: span 2;
+}
