@@ -1,7 +1,8 @@
 video {
   position: absolute;
-  height: 698px;
-  z-index: 10;
+  width: 100%;
+  height: auto;
+  z-index: 2;
   pointer-events: none;
   opacity: 0.3;
 }
@@ -21,14 +22,13 @@ body * {
   right: 0;
   bottom: 0;
   left: 0;
-  border: 5px solid red;
   display: grid;
   grid-template-columns: 643px 1fr;
   grid-template-rows: 96px 1fr 64px;
 }
 
 .top {
-  background: purple;
+  background: rgb(46, 44, 44);
   grid-column-end: span 2;
   color: white;
   display: grid;
@@ -36,7 +36,6 @@ body * {
 }
 
 .hearts {
-  background: yellow;
   padding-top: 24px;
   padding-left: 50px;
   display: flex;
@@ -48,7 +47,8 @@ body * {
   background: red;
   width: 15px;
   height: 12px;
-  margin-right: 1.4px;
+  margin-right: 3px;
+  margin-bottom: 3px;
 }
 
 .left-button {
@@ -66,7 +66,7 @@ body * {
 
 .location {
   align-self: center;
-  margin-left: 10px;
+  margin-left: 46px;
 }
 
 .rupees {
